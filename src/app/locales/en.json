@@ -30,6 +30,7 @@
         "email": "Email",
         "external_link_message": "This link will take you away from the app",
         "affiliation_steemit": "Steemit Team",
+	"affiliation_stemgeeks": "STEMGeeks Team",
         "affiliation_sm": "Steem Monsters Team",
         "feed": "Feed",
         "follow": "Follow",
