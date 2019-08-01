@@ -1,4 +1,4 @@
-import { List } from 'immutable';
+import { fromJSOrdered } from './utils/immutable';
 
 // sometimes it's impossible to use html tags to style coin name, hence usage of _UPPERCASE modifier
 export const APP_NAME = 'stemgeeks';
@@ -10,7 +10,9 @@ export const APP_ICON = 'stemgeeks';
 // FIXME figure out best way to do this on both client and server from env
 // vars. client should read $STM_Config, server should read config package.
 export const APP_URL = 'https://stemgeeks.net';
-export const APP_DOMAIN = 'stemgeeks.net'
+export const APP_DOMAIN = 'stemgeeks.net';
+// max num of tags. if unset, default is 10. This is due to previous hardcoded number.
+export const APP_MAX_TAG = 10;
 export const SCOT_TAG = 'stem';
 export const TAG_LIST = List(['science', 'technology', 'engineering', 'math']);
 export const LIQUID_TOKEN = 'stem';
@@ -51,7 +53,7 @@ export const SHARE_IMAGE =
 export const TWITTER_SHARE_IMAGE =
     'https://' + APP_DOMAIN + '/images/steemit-twshare.png';
 export const SITE_DESCRIPTION =
-    'STEMGeeks is a Science, Technology, Engineering, Math community'; 
+    'STEMGeeks is a Science, Technology, Engineering, Math community';
 
 // various
 export const SUPPORT_EMAIL = 'support@' + APP_DOMAIN;
